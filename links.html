@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -11,89 +11,116 @@
 <body>
     <div class="gridcontain">
 
-        
 
-            <header class="grid-1-header" id="gridHeader">
 
-                <a href="index.html"><img src="pics/visingsobiodlarna.jpg" alt="logo" id="logo"></a>
+        <header class="grid-1-header" id="gridHeader">
 
-                <nav>
+            <a href="index.html"><img src="pics/visingsobiodlarna.jpg" alt="logo" id="logo"></a>
 
-                    <button><a href="index.html" id="homeButton">Hem</a></button>
-                    <button><a href="news.html" id="newsButton">Aktuellt</a></button>
-                    <button><a href="links.html" id="linksButton">Länkar</a></button>
-                    <button><a href="contact.html" id="contactButton">Kontakt</a></button>
-                    <button><a href="member.html" id="memberButton">Bli medlem</a></button>
+            <nav id="navBigScreen">
+                <ul>
+                    <li><a href="index.html" id="homeButton">Hem</a></li>
+                    <li><a href="news.html" id="newsButton">Aktuellt</a></li>
+                    <li><a href="links.html" id="linksButton">Länkar</a></li>
+                    <li><a href="contact.html" id="contactButton">Kontakt</a></li>
+                    <li><a href="member.html" id="memberButton">Bli medlem</a></li>
+                </ul>
 
-                </nav>
-            </header>
-
-            <nav class="grid-2-dropmenu" id="dropMenu">
-                <div id="drop-index"><a href="index.html">HEM</a></div>
-                <div id="drop-news"><a href="news.html">AKTUELLT</a></div>
-                <div id="drop-contact"><a href="contact.html">KONTAKT</a></div>
-                <div id="drop-links"><a href="links.html">LÄNKAR</a></div>
             </nav>
 
+            <button class="menubutton open" id="openMenu">
+                <span class="menuIcon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menuText">Meny</span>
+            </button>
 
-            <div class="grid-6-links" id="linkslinks">
-                <article class="links biodling">
-                    <ul>
-                        <h1>Biodlingsföreningar och sidor:</h1>
-                        <li><a href="https://ligustica.se/">Ligusticabiodlarna</a></li>
-                        <li><a href="https://www.biodlarna.se/">Sveriges Biodlares riksförbund</a></li>
-                        <li><a href="https://alltombiodling.se/">alltombiodling.se</a></li>
-                        <li><a href="https://www.biodlarna.se/bin-och-biodling/att-skaffa-bin/">biodlarna.se</a></li>
-                        <li><a href="https://svenskabin.se/biodling-lonar-sig/">svenskabin.se</a></li>
-                    </ul>
-                </article>
-                <article class="links shop">
-                    <ul>
-                        <h1>Butiker:</h1>
-                        <li><a href="https://www.biredskapsfabriken.se/">Biredskapsbutiken</a></li>
-                        <li><a href="https://www.lpsbiodling.se/">LPS - Biodling</a></li>
-                        <li><a href="http://www.bigarden.se/">Bigården</a></li>
-                    </ul>
+            <nav id="navMenuDrop">
+                <button class="menubutton closed" id="closeMenu">
+                    <span class="menuIcon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menuText">Stäng</span>
+                </button>
 
-                </article>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="news.html">Nyheter</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="member.html">Bli medlem</a></li>
+                    <li><a href="links.html">Länkar</a></li>
+                </ul>
+            </nav>
 
-                <article class="links myndigheter">
-                    <ul>
-                        <h1>Myndigheter:</h1>
-                        <li><a href="https://jordbruksverket.se/djur/ovriga-djur/bin-och-humlor">Jordbruksverket</a></li>
-                        <li><a href="https://www.lansstyrelsen.se/jonkoping/djur/skotsel-av-djur/biodling.html">Länsstyrelsen - Biodling</a></li>
-                        <br><br>        
-                    </ul>
+        </header>
 
-                </article>
-            </div>
+        <div class="grid-6-links" id="linkslinks">
+            <article class="links biodling">
+                <h1>Biodlingsföreningar och sidor:</h1>
+                <ul>
+                    <li><a href="https://ligustica.se/">Ligusticabiodlarna</a></li>
+                    <li><a href="https://www.biodlarna.se/">Sveriges Biodlares riksförbund</a></li>
+                    <li><a href="https://alltombiodling.se/">alltombiodling.se</a></li>
+                    <li><a href="https://www.biodlarna.se/bin-och-biodling/att-skaffa-bin/">biodlarna.se</a></li>
+                    <li><a href="https://svenskabin.se/biodling-lonar-sig/">svenskabin.se</a></li>
+                </ul>
+            </article>
+            <article class="links shop">
+                <h1>Butiker:</h1>
+                <ul>
+                    <li><a href="https://www.biredskapsfabriken.se/">Biredskapsbutiken</a></li>
+                    <li><a href="https://www.lpsbiodling.se/">LPS - Biodling</a></li>
+                    <li><a href="http://www.bigarden.se/">Bigården</a></li>
+                </ul>
+
+            </article>
+
+            <article class="links myndigheter">
+                <h1>Myndigheter:</h1>
+                <ul>
+                    <li><a href="https://jordbruksverket.se/djur/ovriga-djur/bin-och-humlor">Jordbruksverket</a></li>
+                    <li><a href="https://www.lansstyrelsen.se/jonkoping/djur/skotsel-av-djur/biodling.html">Länsstyrelsen
+                            - Biodling</a></li>
+                
+                </ul>
+
+            </article>
+        </div>
+        <div class="grid-11-beetoon" id="beetoon">
+
+            <img src="pics/bee-7798615_640.png" alt="">
+        </div>
 
 
 
-            <footer class="grid-7-footer1">
-                <p>
-                <h2>Svärmtelefon:<br>
-                    Thomas Hansen: 076-12 34 000</b></h2>
-                </p>
 
-            </footer>
-
-            <footer class="grid-7-footer2">
-                <p>
-
-                    &copy; Anne-Lii Hansen<br>
-                    Photos from <a href="https://unsplash.com/">Unsplash</a>
-                </p>
-            </footer>
-
-            <footer class="grid-7-footer3">
-                <p>
-                    <a href="https://www.instagram.com/"><img src="pics/instagramicon.jpg" alt=""></a><br>
-                    Följ oss på Instagram<br>
-                </p>
-            </footer>
-
+        <footer class="grid-7-footer1">
+            
+            <h2>Svärmtelefon:<br>
+            Thomas Hansen: 076-12 34 000</h2>
         
+
+        </footer>
+
+        <footer class="grid-7-footer2">
+            <p>
+
+                &copy; Anne-Lii Hansen<br>
+                Photos from <a href="https://unsplash.com/">Unsplash</a>
+            </p>
+        </footer>
+
+        <footer class="grid-7-footer3">
+            <p>
+                <a href="https://www.instagram.com/"><img src="pics/instagramicon.jpg" alt=""></a><br>
+                Följ oss på Instagram<br>
+            </p>
+        </footer>
+
+
     </div><!--Här slutar div gridcontain-->
     <script src="js/main.js"></script>
 </body>
