@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+@media screen and (max-width: 600px) {
+
+}/*här slutar media query max 600px*/
+
+
+/*
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    
+}/*här slutar media query min 601px and  max 1024px*/
+
+
+
+@media screen and (min-width: 901px) {
+
+    
+    body {
+        background-image: url("../pics/background.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .gridcontain {
+        background-color: #f6ea79;
+        max-width: 1600px;
+        margin: auto;
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: auto;
+        
+    }
+    
+    
+    
+    .grid-1-header{
+        grid-column: 1/13;
+        background-color: #fdfeba;
+        height: auto;
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+        -box-shadow: 0 0 10px #777777;
+    }
+    
+    .grid-1-header img {
+        width: 40%;
+        margin-top: 1%;
+        float: right;
+    }
+    
+    .grid-1-header nav {
+        width: 60%;
+        padding-top: 60px;
+        
+    }
+    
+    .grid-1-header nav button {
+        padding: 7px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: solid 1px rgb(228, 228, 228);
+        background-color: #fdfeba;
+        -moz-box-shadow: 0 0 5px #777777;
+        -webkit-box-shadow: 0 0 5px #777777;
+        -box-shadow: 0 0 5px #777777;
+        
+    }
+    
+    .grid-1-header nav button a {
+        text-decoration: none;
+    }
+    
+    
+    .grid-2-dropmenu {
+        display: none;
+    }
+    
+    
+    .grid-3-main {
+        grid-column: 2/10;
+        background-color: #fdfeba;
+        margin: 20px;
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+        -box-shadow: 0 0 10px #777777;
+    }
+    
+    .grid-3-main article {
+        width: 95%;
+        margin: auto;
+        background-color: #fdfeba;
+        border-color: #eaea2a;
+        border-bottom-style: dotted;
+    }
+    
+    .grid-3-main h1 {
+        padding-left: 40%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    
+    .grid-3-main img {
+        margin: auto;
+        width: 80%;
+        margin-left: 10%;
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+        -box-shadow: 0 0 10px #777777;
+
+    }
+    
+    .grid-3-main p {
+        width: 75%;
+        margin: auto;
+        padding-top: 2%;
+    }
+    
+    .grid-4-news {
+        grid-column: 10/12;
+        background-color: #fdfeba;
+        margin-left: 15px;
+        margin-top: 20px;
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+        -box-shadow: 0 0 10px #777777;
+    }
+    
+    
+
+    .grid-4-news #newscontent h2 {
+        padding: 40px 10px 20px 70px;
+        
+    }
+    
+    .grid-4-news #newscontent h4 {
+        padding: 10px;
+        
+    }
+
+    .grid-4-news #newscontent article {
+        background-color: #fcfcfa;
+        padding: 30px;
+        margin: 10px;
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+        -box-shadow: 0 0 10px #777777;
+    }
+    
+    .grid-4-news #newscontent article h3 {
+        padding-bottom: 8px;
+        text-decoration: underline;
+    }
+
+    .grid-4-newsnews{
+        grid-column-start: 2;
+        grid-column-end: 12;
+        margin: 2%;
+        background-color: #fdfeba;
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+        -box-shadow: 0 0 10px #777777;
+    }
+
+    .grid-4-newsnews article{
+        width: 95%;
+        margin: auto;
+        
+        border-color: black;
+        border-bottom-style: dotted;
+
+    }
+    .grid-4-newsnews h2 {
+    padding-left: 40%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .grid-4-newsnews img {
+        margin: auto;
+        width: 80%;
+        margin-left: 10%;
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+        -box-shadow: 0 0 10px #777777;
+    }
+
+    .grid-4-newsnews p {
+        width: 75%;
+        margin: auto;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .grid-6-links {
+        grid-column: 4/10;
+        background-color: #fdfeba;
+        margin: 20px;
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+        -box-shadow: 0 0 10px #777777;
+    }
+
+    .grid-6-links article {
+        width: 70%;
+        margin: auto;
+        padding: 1%;
+        padding-bottom: 1%;
+    }
+
+    .grid-6-links h1 {
+        padding: 2%;
+    }
+
+    .grid-6-links a {
+        padding: 2%;
+    }
+    
+    .grid-8-contact {
+        grid-column: 2/11;
+        background-color: #fdfeba;
+        margin: 20px;
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+        -box-shadow: 0 0 10px #777777;
+    }
+
+    .grid-8-contact h1 {
+        padding-left: 5%;
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+    .grid-8-contact h2 {
+        padding-left: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    
+    .grid-8-contact h3 {
+        padding-left: 5%;
+        padding-top: 3%;
+        padding-bottom: 1%;
+    }
+    .grid-8-contact p {
+        padding-left: 5%;
+        padding-top: 1%;
+        
+    }
+
+     /*kontaktformulärets bredd, inramning, färg på inramning, rundade kanter och allt centrerat*/
+    .grid-9-form{
+        grid-column: 4/10;
+        margin: 20px;
+    }
+
+    fieldset {
+        grid-column: 5/10;
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: left;
+        padding-bottom: 3%;
+    }
+
+    legend {
+        color: grey;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .grid-10-contactform fieldset  {
+        margin-top: 15px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: left;
+        padding-bottom: 10%;
+    }
+
+   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .grid-7-footer1 {
+        grid-column: 1/5;
+        background-color: #ffff89;
+        height: 100px;
+    }
+
+    .grid-7-footer1 h2 {
+        padding: 15px;
+    }
+
+    .grid-7-footer2 {
+        grid-column: 5/11;
+        grid-row: 3/4;
+        background-color: #ffff89;
+    }
+
+    .grid-7-footer2 p {
+        padding-top: 40px;
+    }
+
+    .grid-7-footer3 {
+        grid-column: 11/13;
+        grid-row: 3/4;
+        background-color: #ffff89;
+    }
+
+    .grid-7-footer3 p {
+        padding-top: 20px;
+    }
+    
+
+
+
+
+
+
+
+
+
+}
+
+/*här slutar media query min 1025px*/

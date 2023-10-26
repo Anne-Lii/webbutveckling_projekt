@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Visingsöbiodlarna</title>
+</head>
+
+<body>
+    <div class="gridcontain">
+
+        <header class="grid-1-header" id="gridHeader">
+
+            <a href="index.html"><img src="pics/visingsobiodlarna.jpg" alt="logo" id="logo"></a>
+
+            <nav>
+
+                <button><a href="index.html" id="homeButton">Hem</a></button>
+                <button><a href="news.html" id="newsButton">Aktuellt</a></button>
+                <button><a href="links.html" id="linksButton">Länkar</a></button>
+                <button><a href="contact.html" id="contactButton">Kontakt</a></button>
+                <button><a href="member.html" id="memberButton">Bli medlem</a></button>
+
+            </nav>
+        </header>
+
+        <nav class="grid-2-dropmenu" id="dropMenu">
+            <div id="drop-index"><a href="index.html">HEM</a></div>
+            <div id="drop-news"><a href="news.html">AKTUELLT</a></div>
+            <div id="drop-contact"><a href="contact.html">KONTAKT</a></div>
+            <div id="drop-links"><a href="links.html">LÄNKAR</a></div>
+        </nav>
+
+        <div class="grid-9-form">
+
+            <form id="membershipForm" name="form" method="get" action="server">
+                <fieldset>
+                    <legend>Bli medlem</legend>
+                    <br><br>
+
+                    <label class="formtext" for="firstname" id="firstName">Förnamn:</label><br>
+                    <input class="formtext" type="text" name="firstname" size="50"><br><br>
+
+                    <label class="formtext" for="secondtname" id="secondName">Efternamn:</label><br>
+                    <input class="formtext" type="text" name="secondtname" size="50"><br><br>
+
+                    <label class="formtext" for="email" id="email">E-mail:</label><br>
+                    <input class="formtext" type="email" name="email" size="50"><br><br>
+
+                    <label class="formtext" for="email" id="email">Telefonnummer:</label><br>
+                    <input class="formtext" type="email" name="email" size="50"><br><br>
+
+                    <label for="membership">Medlemskap:</label><br><br>
+                    <select name="membership">
+                        <option value="adult">Medlemskap vuxen 200:-/år: </option>
+                        <option value="teen">Medlemskap tonår 100:-/år: (13 - 18 år)</option>
+                        <option value="child">Medlemskap barn gratis: (0 - 12 år)</option>
+                        <option value="family">Familjemedlemskap 400:-:</option>
+                        <option value="senior">Seniormedlemskap 140:-/år (över 65 år):</option>
+                    </select><br><br>
+
+                    <label class="formtext" for="message" id="message">Meddelande:</label><br>
+                    <textarea class="formtext" name="meddelande" id="meddelande" cols="45" rows="5"></textarea> <br>
+
+                    <input type="submit" name="submit" value="Skicka in">
+                    <input type="reset" name="reset" value="Nollställ">
+
+                </fieldset>
+            </form>
+
+        </div>
+
+
+
+
+        <footer class="grid-7-footer1">
+            <p>
+            <h2>Svärmtelefon:<br>
+                Thomas Hansen: 076-12 34 000</b></h2>
+            </p>
+
+        </footer>
+
+        <footer class="grid-7-footer2">
+            <p>
+
+                &copy; Anne-Lii Hansen<br>
+                 Photos from <a href="https://unsplash.com/">Unsplash</a>
+            </p>
+        </footer>
+
+        <footer class="grid-7-footer3">
+            <p>
+                <a href="https://www.instagram.com/"><img src="pics/instagramicon.jpg" alt=""></a><br>
+                Följ oss på Instagram<br>
+            </p>
+        </footer>
+
+
+
+    </div><!--Här slutar div gridcontain-->
+
+</body>
+<script src="js/main.js"></script>
+
+</html>
