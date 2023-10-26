@@ -162,15 +162,11 @@
     
 
     .grid-4-news #newscontent h2 {
-        padding: 40px 10px 20px 70px;
+        padding: 10%;
+        font-size: 35px;
         
     }
     
-    .grid-4-news #newscontent h4 {
-        padding: 10px;
-        
-    }
-
     .grid-4-news #newscontent article {
         background-color: #fcfcfa;
         padding: 30px;
@@ -204,8 +200,9 @@
         border-bottom-style: dotted;
 
     }
-    .grid-4-newsnews h2 {
-    padding-left: 40%;
+    .grid-4-newsnews h1 {
+        font-size: 40px;
+        text-align: center;
         padding-top: 3%;
         padding-bottom: 3%;
     }
@@ -222,6 +219,7 @@
     .grid-4-newsnews p {
         width: 75%;
         margin: auto;
+        text-align: center;
         padding-top: 2%;
         padding-bottom: 2%;
     }
@@ -243,15 +241,21 @@
     }
 
     .grid-6-links h1 {
+        font-size: 40px;
         padding: 2%;
+    }
+
+    .grid-6-links ul {
+        list-style: none;
     }
 
     .grid-6-links a {
         padding: 2%;
+        font-size: 20px;
     }
     
     .grid-8-contact {
-        grid-column: 2/11;
+        grid-column: 2/9;
         background-color: #fdfeba;
         margin: 20px;
         -moz-box-shadow: 0 0 10px #777777;
@@ -281,10 +285,13 @@
         
     }
 
-     /*kontaktformulärets bredd, inramning, färg på inramning, rundade kanter och allt centrerat*/
+     /*kontaktformuläret*/
     .grid-9-form{
         grid-column: 4/10;
-        margin: 20px;
+        margin: 100px;
+        min-width: 100%;
+        max-width: 100%;
+        
     }
 
     fieldset {
@@ -293,13 +300,18 @@
         border-radius: 10px;
         padding: 20px;
         text-align: left;
-        padding-bottom: 3%;
+        padding-bottom: 100px;
+        
     }
 
     legend {
         color: grey;
         text-transform: uppercase;
         text-align: center;
+    }
+
+    .grid-10-contactform {
+        grid-column: 9/12;
     }
 
     .grid-10-contactform fieldset  {
@@ -316,7 +328,7 @@
    /*footer*/
 
     .grid-7-footer1 {
-        grid-column: 1/5;
+        grid-column: 1/6;
         grid-row: 3/4;
         background-color: #ffff89;
         max-height: 100px;
@@ -325,11 +337,13 @@
     }
 
     .grid-7-footer1 h2 {
-        padding: 15px;
+        padding-top: 30px;
+        padding-left: 30px;
+        font-size: 20px;
     }
 
     .grid-7-footer2 {
-        grid-column: 5/11;
+        grid-column: 6/11;
         grid-row: 3/4;
         background-color: #ffff89;
         max-height: 100px;
