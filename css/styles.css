@@ -57,7 +57,7 @@
         background-color: #f6ea79;
         max-width: 1600px;
         margin: auto;
-
+        min-height: 100vh;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 160px auto 100px;
