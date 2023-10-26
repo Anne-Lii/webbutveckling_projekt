@@ -5,16 +5,42 @@
 }
 
 
-/*
-@media screen and (max-width: 600px) {
 
-}/*här slutar media query max 600px*/
+@media screen and (max-width: 900px) {
 
 
-/*
-@media screen and (min-width: 601px) and (max-width: 1024px) {
     
-}/*här slutar media query min 601px and  max 1024px*/
+    body {
+        background-image: url("../pics/background.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .gridcontain {
+        background-color: #f6ea79;
+        max-width: 1600px;
+        margin: auto;
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: auto;        
+    }
+
+
+
+
+
+
+
+
+
+
+
+}/*här slutar media query max 900px*/
+
+
+
+
 
 
 
@@ -34,16 +60,16 @@
 
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-auto-rows: auto;
-        
+        grid-template-rows: 160px auto 100px;
+        grid-auto-rows: auto;  
+          
     }
-    
-    
     
     .grid-1-header{
         grid-column: 1/13;
         background-color: #fdfeba;
         height: auto;
+        max-height: 160px;
         -moz-box-shadow: 0 0 10px #777777;
         -webkit-box-shadow: 0 0 10px #777777;
         -box-shadow: 0 0 10px #777777;
@@ -126,7 +152,7 @@
     .grid-4-news {
         grid-column: 10/12;
         background-color: #fdfeba;
-        margin-left: 15px;
+        height: 1000px;
         margin-top: 20px;
         -moz-box-shadow: 0 0 10px #777777;
         -webkit-box-shadow: 0 0 10px #777777;
@@ -156,6 +182,7 @@
     
     .grid-4-news #newscontent article h3 {
         padding-bottom: 8px;
+        padding-top: 8px;
         text-decoration: underline;
     }
 
@@ -285,28 +312,16 @@
     }
 
    
- 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   /*footer*/
 
     .grid-7-footer1 {
         grid-column: 1/5;
+        grid-row: 3/4;
         background-color: #ffff89;
-        height: 100px;
+        max-height: 100px;
+        position: relative;
+        bottom: 0;
     }
 
     .grid-7-footer1 h2 {
@@ -317,6 +332,9 @@
         grid-column: 5/11;
         grid-row: 3/4;
         background-color: #ffff89;
+        max-height: 100px;
+        position: relative;
+        bottom: 0;
     }
 
     .grid-7-footer2 p {
@@ -327,10 +345,14 @@
         grid-column: 11/13;
         grid-row: 3/4;
         background-color: #ffff89;
+        max-height: 100px;
+        position: relative;
+        bottom: 0;
     }
 
     .grid-7-footer3 p {
         padding-top: 20px;
+        
     }
     
 
