@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <div class="gridcontain">
 
         <header class="grid-1-header" id="gridHeader">
@@ -23,25 +24,31 @@
                     <li><a href="contact.html" id="contactButton">Kontakt</a></li>
                     <li><a href="member.html" id="memberButton">Bli medlem</a></li>
                 </ul>
-
             </nav>
 
             <button class="menubutton open" id="openMenu">
+
                 <span class="menuIcon">
                     <span class="bars"></span>
                     <span class="bars"></span>
                     <span class="bars"></span>
                 </span>
+
                 <span class="menuText">Meny</span>
+
             </button>
 
             <nav id="navMenuDrop">
+
                 <button class="menubutton closed" id="closeMenu">
+
                     <span class="menuIcon">
                         <span class="bars cross1"></span>
                         <span class="bars cross2"></span>
                     </span>
+
                     <span class="menuText">Stäng</span>
+
                 </button>
 
                 <ul>
@@ -51,34 +58,40 @@
                     <li><a href="member.html">Bli medlem</a></li>
                     <li><a href="links.html">Länkar</a></li>
                 </ul>
+
             </nav>
 
         </header>
 
         <div class="grid-12-honeybee">
+
             <img src="pics/honeybee.png" alt="">
+
         </div>
 
         <div class="grid-9-form">
 
             <form id="membershipForm" name="form" method="get" action="server">
+
                 <fieldset>
+
                     <legend>Bli medlem</legend>
                     <br><br>
 
-                    <label  for="firstname">Förnamn:</label><br>
-                    <input  type="text" name="firstname" id="firstname" size="50"><br><br>
+                    <label for="firstname">Förnamn:</label><br>
+                    <input type="text" name="firstname" id="firstname" size="40"><br><br>
 
-                    <label  for="secondname">Efternamn:</label><br>
-                    <input  type="text" name="secondtname" id="secondname" size="50"><br><br>
+                    <label for="secondname">Efternamn:</label><br>
+                    <input type="text" name="secondtname" id="secondname" size="40"><br><br>
 
                     <label for="email">E-mail:</label><br>
-                    <input type="email" name="email" id="email" size="50"><br><br>
+                    <input type="email" name="email" id="email" size="40"><br><br>
 
                     <label for="number">Telefonnummer:</label><br>
                     <input type="number" name="number" id="number"><br><br>
 
                     <label for="membership">Medlemskap:</label><br><br>
+
                     <select name="membership" id="membership">
                         <option value="adult">Medlemskap vuxen 200:-/år: </option>
                         <option value="teen">Medlemskap tonår 100:-/år: (13 - 18 år)</option>
@@ -88,32 +101,29 @@
                     </select><br><br>
 
                     <label for="message">Meddelande:</label><br>
-                    <textarea name="meddelande" id="message" cols="45" rows="5"></textarea> <br>
+                    <textarea name="meddelande" id="message" cols="40" rows="5"></textarea> <br>
 
                     <input id="sendinform" type="submit" name="submit" value="Skicka in">
                     <input id="resetform" type="reset" name="reset" value="Nollställ">
 
                 </fieldset>
+
             </form>
 
         </div>
 
-
-
-
         <footer class="grid-7-footer1">
-            
+
             <h2>Svärmtelefon:<br>
-            Thomas Hansen: 076-12 34 000</h2>
-            
+                Thomas Hansen: 076-12 34 000</h2>
 
         </footer>
 
         <footer class="grid-7-footer2">
             <p>
-
                 &copy; Anne-Lii Hansen<br>
                 Photos from <a href="https://unsplash.com/">Unsplash</a>
+                Image by <a href="https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=311047">Clker-Free-Vector-Images</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=311047">Pixabay</a>
             </p>
         </footer>
 
@@ -124,11 +134,10 @@
             </p>
         </footer>
 
-
-
     </div><!--Här slutar div gridcontain-->
 
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

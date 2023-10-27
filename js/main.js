@@ -1,6 +1,6 @@
 "use strict";
 
-//hämtar element från  HTML-kod
+//hämtar element från HTML-kod
 const openMenuButton = document.getElementById("openMenu");
 const closeMenuButton = document.getElementById("closeMenu");
 
@@ -13,12 +13,12 @@ function menuToggle() {
 
     const navMenuDropEl = document.getElementById("navMenuDrop");
 
-    let style = window.getComputedStyle(navMenuDropEl);
+    let style = window.getComputedStyle(navMenuDropEl);//kontrollerar om stylingen display är none eller block just nu
 
     if (style.display === "none") {
-        navMenuDropEl.style.display = "block";
+        navMenuDropEl.style.display = "block";//är display none nu så ändras det till block
     } else {
-        navMenuDropEl.style.display = "none";
+        navMenuDropEl.style.display = "none";//tvärtom här
     }
 
 }
